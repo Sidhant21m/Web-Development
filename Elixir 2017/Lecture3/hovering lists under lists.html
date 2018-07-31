@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hovering</title>
+    <style>
+
+       ol ol{
+            display:none;
+        }
+        li:hover>ol{
+            color: red;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<ol>
+    <li id="one">Item1
+    <ol type="I">
+    <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+    </ol></li><br>
+    <li id="two">Item2
+        <ol type="I">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ol></li><br>
+    <li id="three">Item3
+        <ol type="I">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ol></li><br>
+</ol>
+</body>
+</html>

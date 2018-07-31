@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>psudeoSelectors</title>
+<style>
+    #p1:hover{
+        color: blue;
+    }
+    button:hover{
+        color:red;
+    }
+    button:active{
+        color: green;
+    }
+    p::first-letter{
+        font-size: 20px;
+    }
+    p::first-line{
+        font-style: italic;
+    }
+   ul:nth-child(2n){
+        text-align: right;
+        font-weight: bold;
+    }
+
+</style>
+</head>
+<body>
+    <p id="p1">
+
+        some para
+    </p>
+<button>
+    button
+</button>
+<ul>
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+</ul>
+</body>
+</html>

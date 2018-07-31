@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Keyframes</title>
+    <style>
+/*<!--Creating key frames and animation name-->*/
+        @keyframes myanim {
+            /*animation at 25%*/
+         25%{
+             background-color: green;
+             transform: translate(0px,150px);
+         }
+            /*animation at 50%*/
+            50%{
+                background-color: blue;
+                transform: translate(150px,150px);
+            }
+            /*animation at 75%*/
+            75%{
+                 background-color: yellow;
+                 transform: translate(150px,0px);
+             }
+            /*animation at 100%*/
+            100%{
+                background-color: brown;
+                transform: translate(0px,0px);
+            }
+        }
+        div{
+            height:60px;
+            width: 60px;
+            background-color: brown;
+            margin: 10px;
+
+        }
+        /*when I hover a div the immediate div next to it gets activated*/
+        div:hover+div{
+            animation-name: myanim;
+            animation-duration: 5s;
+            background-color: brown;
+
+        }
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+
+</body>
+</html>

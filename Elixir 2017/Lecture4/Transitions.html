@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transitions</title>
+<style>
+    div{
+        height:60px;
+        width: 60px;
+        background-color: brown;
+        margin: 10px;
+        /*Transition still works if declared inside div and not inside id*/
+        transition: 2s;
+    }
+    #div2:hover{
+        width: 240px;
+        /*Transition gives an anmation effect */
+        /*Here increses the width of div 2 in 2 seconds but rotates immediately*/
+        /*transition: width(2s);*/
+        transform: rotate(40deg);
+        background-color: green;
+
+    }
+#div5:hover{
+    transform: translateX(140px);
+    background-color: green;
+    height: 10px;
+}
+</style>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<div id="div4"></div>
+<div id="div5"></div>
+<div id="div6"></div>
+<div id="div7"></div>
+<div id="div8"></div>
+<div id="div9"></div>
+</body>
+</html>

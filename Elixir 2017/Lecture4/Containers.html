@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Containers</title>
+    <style>
+        @keyframes bounce {
+            0%{
+
+            }
+            50%{
+                transform: translateY(300px);
+            }
+            100%{
+
+            }
+
+        }
+
+        div{
+            height: 80px;
+        }
+        span{
+
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            margin: 10px;
+            background-color: darkred;
+            animation-name: bounce;
+            animation-duration: 4s;
+            animation-iteration-count: 100;
+
+        }
+        #span1{
+            /*Animation speed faster towards starting and slow towards end*/
+            animation-timing-function: ease-out;
+        }
+        #span2{
+            /*animation speed remains same throughout time*/
+            animation-timing-function: linear;
+        }
+        #span3{
+            /*Animation speed faster towards end and slow towards starting*/
+            animation-timing-function: ease-in;
+        }
+        #span4{
+            /*most pleasing effect - ease*/
+            animation-timing-function: ease;
+        }
+        #span5{
+            animation-timing-function: linear;
+        }
+
+        #span6{
+            /*Mixture of ease in and ease out*/
+            animation-timing-function: ease;
+        }
+        #span7{
+            /*Cubic bezier function which takes 4 parameter b/w 0 and 1*/
+            animation-timing-function: cubic-bezier(0.4,0.1,0.9,0.6) ;
+        }
+        #span8{
+            animation-timing-function: cubic-bezier(0.2,0.3,0.1,0.5);
+        }
+
+    </style>
+</head>
+<body>
+<div id="containers">
+    <span id="span1"></span>
+    <span id="span2"></span>
+    <span id="span3"></span>
+    <span id="span4"></span>
+    <span id="span5"></span>
+    <span id="span6"></span>
+    <span id="span7"></span>
+    <span id="span8"></span>
+</div>
+</body>
+</html>

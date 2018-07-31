@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>visibility</title>
+    <style>
+        #one{
+            display: none;
+        /*display none will not show the id and also delete the space it occupies*/
+            visibility: hidden;
+            /*Visibility hidden hides the text but space remains there*/
+        }
+        #two{
+            display: inline;
+            font-weight: bold;
+        }
+        #three{
+            display: inline;
+            height: 10px;
+            /*we cannot change height or width on inline elements*/
+        }
+        p{
+            visibility: inherit;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="one">
+    some text in div one
+</div>
+<div id="two">
+    some text in div two
+    <p>
+        some para
+    </p>
+</div>
+<div id="three">
+    some text in div three
+</div>
+</body>
+</html>

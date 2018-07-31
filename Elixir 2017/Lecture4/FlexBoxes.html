@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 FlexBoxes</title>
+
+    <style>
+        .container{
+            /* flexbox ensures that elements behave predictably when the page layout must
+             accommodate different screen sizes and different display devices.
+
+               For many applications, the flexible box model provides an improvement over the block
+               model in that it does not use floats, nor do the flex container's margins collapse with
+                the margins of its contents.*/
+        display: flex;
+            /*!*reverses the row shifts towards right*!*/
+            /*flex-direction: row-reverse;*/
+            /*!*reverses the column*!*/
+            /*flex-direction: column-reverse;*/
+            /*visit https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
+
+            or
+           https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+            */
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+
+        }
+
+        .item{
+           background-color: yellow;
+            border-color: black;
+            border-width: medium;
+            border-style: solid;
+            width: 100px;
+            height: 100px;
+
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+</div>
+
+</body>
+</html>

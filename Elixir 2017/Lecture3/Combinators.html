@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    ul > li {
+        color: red;
+    }
+
+    ul + div {
+        font-weight: bold;
+    }
+
+    ul li {
+        background: yellow;
+    }
+
+    div > ul > li {
+        border-style: solid;
+        border-color: black;
+        border-width: thick;
+    }
+</style>
+<body>
+
+<div id="one">
+    <p>
+        this is a para
+    </p>
+    <ul>
+        <li> item 1</li>
+    </ul>
+    <div>
+        another div
+        <p>
+            para 2
+        </p>
+        <ul>
+            <li>list under ul under p under div</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
